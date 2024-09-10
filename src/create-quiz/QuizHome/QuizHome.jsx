@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import QuizQuestion from '../QuizQuestion/QuizQuestion';
 import { useState, useEffect } from 'react';
-import { GeminiContext } from '@/GeminiContext/GeminiContext';
+import { GeminiContext } from '../../../Backend/GeminiContext/GeminiContext';
 // import { FunctionCallingMode } from '@google/generative-ai/server';
 import CustomBarChart from '../graphs/BarChart';
 import { ScrollArea } from '@/components/ui/scroll-area';

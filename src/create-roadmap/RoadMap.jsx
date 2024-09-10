@@ -1,5 +1,5 @@
 import React, { useContext, useCallback, useState, useEffect } from 'react'
-import { GeminiContext } from '@/GeminiContext/GeminiContext';
+import { GeminiContext } from '../../Backend/GeminiContext/GeminiContext';
 import {
     ReactFlow,
     Controls,
