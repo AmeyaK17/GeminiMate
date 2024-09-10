@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react'
-import { runGemini, runGeminiImage, runGeminiQuizAnalysis, runGeminiRoadMapJSON, runGeminiRoadMapJSONForTopic } from './gemini';
+import { runGemini, runGeminiImage, runGeminiQuizAnalysis, runGeminiRoadMapJSON, runGeminiRoadMapJSONForTopic } from '../../Backend/src/geminiForFrontend/gemini';
 import uploadFile from '@/lib/fileUploadUtil';
 
 export const GeminiContext = createContext();
