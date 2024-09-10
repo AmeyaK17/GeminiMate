@@ -1,25 +1,25 @@
 {
     "builds": [
       {
-        "src": "backend/src/index.js",
-        "use": "@vercel/node"
+        "src": "Backend/src/index.js",
+        "use": "@vercel/node"  
       },
       {
-        "src": "/package.json",
+        "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "/build"
+          "distDir": "build" 
         }
       }
     ],
     "rewrites": [
       {
-        "source": "/api/(.*)",
-        "destination": "/backend/src/index.js"
+        "source": "/api/(.*)",  
+        "destination": "/Backend/src/index.js"
       },
       {
-        "source": "/(.*)",
-        "destination": "/"
+        "source": "/(.*)", 
+        "destination": "/src/$1"
       }
     ]
   }
