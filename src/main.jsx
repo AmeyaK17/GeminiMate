@@ -11,7 +11,7 @@ import Header from './components/custom/Header.jsx';
 import { Toaster } from './components/ui/sonner.jsx';
 import MarkmapHooks from './create-mindmap/index.jsx';
 import Quiz from './create-quiz/index.jsx';
-import GeminiContextProvider from '../Backend/GeminiContext/GeminiContext.jsx';
+import GeminiContextProvider from './GeminiContext/GeminiContext.jsx';
 import RoadmapMain from './create-roadmap/index.jsx';
 import TailWindNavbar from './components/custom/TailwindNavbar';
 import GradeMe from './create-rubric/index.jsx';

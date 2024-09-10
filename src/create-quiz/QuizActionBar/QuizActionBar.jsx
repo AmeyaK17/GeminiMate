@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { GeminiContext } from '../../../Backend/GeminiContext/GeminiContext';
+import { GeminiContext } from '../../GeminiContext/GeminiContext';
 import Slider from '../Slider/Slider';
 import './bg.css'
 import uploadFile from '@/lib/fileUploadUtil';
