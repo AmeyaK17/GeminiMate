@@ -453,6 +453,18 @@ app.post("/api/generateLecture", upload.single("file"), async (req, res) => {
   app.get('/api/hello', (req, res) => {
     res.send('Hello World!');
   });
+
+  const uploadDir = '/tmp/uploads';  // Use the /tmp directory for uploads
+
+  // Ensure the /tmp/uploads directory exists
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir, { recursive: true });
+  }
+
+  app.post('/api/upload', (req, res) => {
+    // Handle file uploads here, saving them in the /tmp/uploads directory
+    res.send('File uploaded');
+  });
 });
 
 // Start the server
