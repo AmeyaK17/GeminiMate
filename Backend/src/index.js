@@ -449,6 +449,10 @@ app.post("/api/generateLecture", upload.single("file"), async (req, res) => {
   );
 
   res.send(result.response.text());
+
+  app.get('/api/hello', (req, res) => {
+    res.send('Hello World!');
+  });
 });
 
 // Start the server
